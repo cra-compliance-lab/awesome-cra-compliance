@@ -166,13 +166,72 @@ For critical products (Annex IV: HSMs, smart-meter gateways, smartcards) and opt
 
 ### SBOM & Transparency
 
-CRA Annex I Part II (1) requires manufacturers to identify and document components and their vulnerabilities, including by drawing up an SBOM.
+CRA Annex I Part II (1) obliges manufacturers to identify and document the components and vulnerabilities in their products, including through a software bill of materials. The draft horizontal harmonised standard **prEN 40000-1-3** (CEN/CLC JTC 13) gives that obligation operational shape through normative requirements in clauses 5.3.8 (software) and 5.3.9 (hardware); for authoritative wording, consult the published draft from your national standards body.
 
-- [ENISA — CRA SBOM Study (Nov 2025)](https://www.enisa.europa.eu/news/call-for-feedback-advancing-software-supply-chain-security-together) - ENISA's study on SBOM tooling, formats, and maturity for CRA compliance. *Essential reference.*
-- [CycloneDX — Authoritative Guide to SBOM](https://cyclonedx.org/guides/OWASP_CycloneDX-Authoritative-Guide-to-SBOM-en.pdf) - OWASP's free, open guide to SBOM production and consumption using CycloneDX. *Free; recommended starting point.*
-- [SPDX Specification](https://spdx.dev/specifications/) - The alternative SBOM format (ISO/IEC 5962:2021). *Free.*
-- [SBOM Analysis — Implementation Guide (BSI / Fraunhofer)](https://www.bsi.bund.de/) - Practical implementation guide for producing and consuming SBOMs, jointly authored by BSI and Fraunhofer. *Free download.*
-- [CISA SBOM landing page](https://www.cisa.gov/sbom) - US CISA resources on SBOM; aligns with CRA approach and referenced in much EU material.
+| ID | What the requirement covers (paraphrased) |
+|----|-------------------------------------------|
+| `[PRE-7-RQ-01]` | Every software component in the product must be inventoried and documented. |
+| `[PRE-7-RQ-03]` | Direct dependencies are mandatory; indirect (transitive) dependencies are recommended. |
+| `[PRE-7-RQ-04]` | The SBOM has to be machine-readable; SPDX and CycloneDX are the formats explicitly named. |
+| `[PRE-7-RQ-06]` | SBOM metadata must include author, version, and ISO-8601 timestamp. |
+| `[PRE-7-RQ-07]` | Each component requires a unique identifier — PURL, CPE, and SWHID are given as examples. |
+| `[PRE-7-RQ-07-RE]` | Where an upstream vendor supplies a component hash, it must be carried through into the SBOM. |
+| `[PRE-8-RQ-02]` | Hardware must also be inventoried: producer, component name, identifier, and firmware version where applicable. |
+| `[RLS-2-RQ-03-RE]` | After a vulnerability is fixed, the disclosure must be issued in a machine-readable advisory format; CSAF v2.0 (ISO/IEC 20153:2025) is the named reference. |
+
+> *Summaries paraphrased from the public draft of prEN 40000-1-3 (© CEN-CENELEC); editorial commentary only.*
+
+*Specifications and reference publications:*
+
+- [CISA SBOM landing page](https://www.cisa.gov/sbom) - US CISA hub of SBOM resources; aligns with the CRA approach and is referenced across EU material. *Free.*
+- [CSAF v2.0 (OASIS)](https://csaf.io/) - Machine-readable vulnerability advisory format named by prEN 40000-1-3 `[RLS-2-RQ-03-RE]`, published as ISO/IEC 20153:2025. *Free and open.*
+- [CycloneDX Specification](https://cyclonedx.org/specification/overview/) - OWASP-maintained SBOM format satisfying prEN 40000-1-3 `[PRE-7-RQ-04]`. *Free and open; current version 1.6.*
+- [ENISA — CRA SBOM Study (Nov 2025)](https://www.enisa.europa.eu/news/call-for-feedback-advancing-software-supply-chain-security-together) - ENISA's study on SBOM tooling, formats, and maturity for CRA compliance. *Free; essential reference.*
+- [ENISA — SBOM Analysis: Towards an Implementation Guide](https://www.enisa.europa.eu/publications/sbom-analysis) - ENISA guide covering minimum elements, naming conventions, quality criteria, and CI/CD integration. *Free download.*
+- [NTIA — The Minimum Elements For a Software Bill of Materials](https://www.ntia.doc.gov/report/2021/minimum-elements-software-bill-materials-sbom) - US baseline of seven SBOM data fields, widely implemented by tooling and aligned with BSI TR-03183-2. *Free.*
+- [SPDX Specification](https://spdx.dev/specifications/) - Alternative ISO/IEC 5962:2021 SBOM format, equally accepted under prEN 40000-1-3 `[PRE-7-RQ-04]`. *Free and open.*
+
+*Generation tools (open source):*
+
+- [cdxgen](https://github.com/CycloneDX/cdxgen) - Fast multi-language CycloneDX SBOM generator with monorepo and reachability support. *Apache-2.0.*
+- [CycloneDX build plugins](https://github.com/CycloneDX) - Native build-time SBOM generators for Maven, Gradle, npm, Python, .NET, Go, Rust, and PHP. *Open-source; highest-fidelity Build SBOMs per BSI TR-03183-2.*
+- [Microsoft sbom-tool](https://github.com/microsoft/sbom-tool) - Enterprise SPDX 2.2 / 3.0 generator using Microsoft Component Detection libraries. *MIT.*
+- [OSS Review Toolkit (ORT)](https://github.com/oss-review-toolkit/ort) - End-to-end analyse-scan-report pipeline for SBOM and licence compliance, used across automotive and telecom. *Apache-2.0.*
+- [Syft](https://github.com/anchore/syft) - Multi-ecosystem SBOM generator for source, containers, and filesystems, outputting SPDX and CycloneDX. *Apache-2.0.*
+- [Tern](https://github.com/tern-tools/tern) - Deep container-layer analyser for Dockerfile-based images, hosted by the Linux Foundation. *BSD-2-Clause.*
+- [Trivy](https://github.com/aquasecurity/trivy) - Container and filesystem SBOM generator combined with a vulnerability scanner in one binary. *Apache-2.0.*
+- [Yocto Project SPDX generation](https://docs.yoctoproject.org/dev/dev-manual/sbom.html) - Native SPDX SBOM output for embedded and IoT builds using the Yocto/OpenEmbedded framework. *Open-source.*
+
+*Validation and quality scoring:*
+
+- [bomber](https://github.com/devops-kung-fu/bomber) - SBOM vulnerability scanner with pluggable data-provider backends. *Apache-2.0.*
+- [CycloneDX CLI](https://github.com/CycloneDX/cyclonedx-cli) - Schema validation, format conversion, and SBOM merge/diff operations. *Apache-2.0.*
+- [ntia-conformance-checker](https://github.com/spdx/ntia-conformance-checker) - Automated NTIA Minimum Elements verification for SPDX SBOMs. *Apache-2.0.*
+- [sbomqs](https://github.com/interlynk-io/sbomqs) - Quality and compliance scorer with built-in profiles for BSI TR-03183-2, NTIA Minimum Elements, FSCT v3, and OpenChain Telco. *Apache-2.0.*
+- [sbom-tools](https://github.com/sbom-tool/sbom-tools) - Semantic SBOM/CBOM diff and scoring tool with CRA, NTIA, and NIST SSDF profiles plus VEX state tracking. *MIT.*
+- [SPDX Tools](https://github.com/spdx/tools) - Reference SPDX validator, converter, and model toolkit. *Apache-2.0.*
+
+*Vulnerability analysis and disclosure:*
+
+- [Cosign (sigstore)](https://github.com/sigstore/cosign) - Signs and attests SBOMs and attaches them to OCI artifacts for supply-chain integrity. *Apache-2.0.*
+- [Dependency-Track (OWASP)](https://github.com/DependencyTrack/dependency-track) - Continuous SBOM-based component analysis platform with policy engine and VEX support. *Apache-2.0.*
+- [Grype](https://github.com/anchore/grype) - CVE scanner that consumes CycloneDX and SPDX SBOMs. *Apache-2.0.*
+- [Secvisogram](https://github.com/secvisogram/secvisogram) - CSAF v2.0 advisory editor mapping to prEN 40000-1-3 `[RLS-2-RQ-03-RE]`; maintained with BSI involvement. *MIT.*
+
+*Firmware and binary analysis (IoT / embedded):*
+
+- [Binwalk](https://github.com/ReFirmLabs/binwalk) - Firmware extraction and filesystem-layer analysis tool. *MIT.*
+- [EMBA](https://github.com/e-m-b-a/emba) - Automated embedded-firmware security analyser with component identification and CVE matching. *GPL-3.0.*
+- [FACT (Fraunhofer FKIE)](https://github.com/fkie-cad/FACT_core) - Firmware Analysis and Comparison Tool used by BSI and European CERTs. *GPL-3.0.*
+- [ScanCode Toolkit (nexB)](https://github.com/nexB/scancode-toolkit) - Licence and origin detection for binary and source trees. *Apache-2.0.*
+
+*Commercial SCA / SBOM platforms:*
+
+- [Black Duck (Synopsys)](https://www.synopsys.com/software-integrity.html) - Binary-code fingerprinting and snippet detection, common in automotive and medical compliance programmes. *Commercial.*
+- [FOSSA](https://fossa.com/) - Software composition analysis combining licence compliance with SBOM generation. *Commercial.*
+- [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
+- [Mend](https://www.mend.io/) - Binary hash matching, policy engine, and vulnerability management. *Commercial.*
+- [Snyk](https://snyk.io/) - Developer-centric SCA with SBOM export and vulnerability detection. *Commercial.*
 
 ### Coordinated Vulnerability Disclosure
 
