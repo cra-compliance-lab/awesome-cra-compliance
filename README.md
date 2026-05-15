@@ -94,9 +94,9 @@ The M/606 mandate defines **40+ harmonised standards** — 4 horizontal (applica
 
 The `prEN 40000-1-x` family covers requirements that apply across all CRA products. Drafts are currently under public enquiry; final versions will be cited in the Official Journal.
 
-- [prEN 40000-1-1 — General principles and common requirements](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-1/396310000) - Scope, definitions, compliance framework for CRA. *Currently draft under CEN-CLC JTC 13.*
-- [prEN 40000-1-2 — Cybersecurity requirements (Annex I Part I Point 1)](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-2/396310071) - Covers the catch-all "no known exploitable vulnerabilities" obligation and security-by-design requirements. *Paid once published; free during public enquiry.*
-- [prEN 40000-1-3 — Vulnerability handling (Annex I Part II)](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-3/398007938) - Operational requirements for vulnerability management, SBOM, coordinated disclosure, security updates. *Draft; see WG-9 PT3 workshop materials.*
+- [prEN 40000-1-1:2026-03 — General principles and common requirements](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-1/399664868) - Scope, definitions, compliance framework for CRA. *Currently draft under CEN-CLC JTC 13.*
+- [prEN 40000-1-2:2026-03 — Cybersecurity requirements (Annex I Part I Point 1)](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-2/399705978) - Covers the catch-all "no known exploitable vulnerabilities" obligation and security-by-design requirements. *Paid once published; free during public enquiry.*
+- [prEN 40000-1-3:2026-02 — Vulnerability handling (Annex I Part II)](https://www.dinmedia.de/en/draft-standard/din-en-40000-1-3/398007938) - Operational requirements for vulnerability management, SBOM, coordinated disclosure, security updates. *Draft; see WG-9 PT3 workshop materials.*
 - [prEN 40000-1-4 — Security controls (Annex I Part I Point 2)](https://standards.cencenelec.eu/) - The 13-point security-controls catalogue implementing Annex I Part I (2)(a)–(m).
 
 ### Vertical Standards (ETSI EN 304-6xx series)
