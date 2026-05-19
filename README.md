@@ -205,6 +205,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 *Validation and quality scoring:*
 
 - [bomber](https://github.com/devops-kung-fu/bomber) - SBOM vulnerability scanner with pluggable data-provider backends. *Apache-2.0.*
+- [cra-sbom-evidence](https://github.com/plusultra-tools/cra-sbom-evidence) - CRA Annex I Part II (1) preflight: scores a CycloneDX/SPDX SBOM against BSI TR-03183-2 mandatory fields and emits an Article 14 evidence bundle. *MIT.*
 - [CycloneDX CLI](https://github.com/CycloneDX/cyclonedx-cli) - Schema validation, format conversion, and SBOM merge/diff operations. *Apache-2.0.*
 - [ntia-conformance-checker](https://github.com/spdx/ntia-conformance-checker) - Automated NTIA Minimum Elements verification for SPDX SBOMs. *Apache-2.0.*
 - [sbomqs](https://github.com/interlynk-io/sbomqs) - Quality and compliance scorer with built-in profiles for BSI TR-03183-2, NTIA Minimum Elements, FSCT v3, and OpenChain Telco. *Apache-2.0.*
