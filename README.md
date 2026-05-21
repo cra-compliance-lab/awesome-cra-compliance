@@ -395,3 +395,5 @@ This list is curated and maintained by **Jeans Koo** at **The One Testing Techno
 - ✉️ [jeans.koo@theonelab.co](mailto:jeans.koo@theonelab.co)
 
 *For questions, corrections, or to contribute a resource, open an issue or pull request — see [CONTRIBUTING.md](CONTRIBUTING.md).*
+
+- [CausalLayer MCP](https://github.com/smq9sn5jck-coder/causallayer-mcp) - Deterministic liability attribution for AI systems, designed for EU regulatory compliance including AI Act and CRA overlap areas.
