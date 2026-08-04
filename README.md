@@ -201,7 +201,8 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 - [Tern](https://github.com/tern-tools/tern) - Deep container-layer analyser for Dockerfile-based images, hosted by the Linux Foundation. *BSD-2-Clause.*
 - [Trivy](https://github.com/aquasecurity/trivy) - Container and filesystem SBOM generator combined with a vulnerability scanner in one binary. *Apache-2.0.*
 - [Yocto Project SPDX generation](https://docs.yoctoproject.org/dev/dev-manual/sbom.html) - Native SPDX SBOM output for embedded and IoT builds using the Yocto/OpenEmbedded framework. *Open-source.*
-
+- [CRANE](https://github.com/cra-norm-engine/crane) - Open-source CRA compliance evidence engine that evaluates SBOMs and related artefacts against machine-readable CRA requirements and produces structured compliance evidence. *AGPL-3.0.*
+  
 *Validation and quality scoring:*
 
 - [bomber](https://github.com/devops-kung-fu/bomber) - SBOM vulnerability scanner with pluggable data-provider backends. *Apache-2.0.*
