@@ -230,6 +230,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 *Commercial SCA / SBOM platforms:*
 
 - [Black Duck (Synopsys)](https://www.synopsys.com/software-integrity.html) - Binary-code fingerprinting and snippet detection, common in automotive and medical compliance programmes. *Commercial.*
+- [CRACI](https://craci.com/build-time-sboms) - Managed GitHub Actions runners that record the dependencies each build pulls in and produce a CycloneDX or SPDX SBOM per job, then track vulnerabilities in what shipped. Relevant to the SBOM and vulnerability-handling requirements in Annex I. *Commercial.*
 - [FOSSA](https://fossa.com/) - Software composition analysis combining licence compliance with SBOM generation. *Commercial.*
 - [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
 - [Mend](https://www.mend.io/) - Binary hash matching, policy engine, and vulnerability management. *Commercial.*
