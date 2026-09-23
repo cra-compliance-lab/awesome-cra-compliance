@@ -234,6 +234,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 - [FOSSA](https://fossa.com/) - Software composition analysis combining licence compliance with SBOM generation. *Commercial.*
 - [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
 - [Mend](https://www.mend.io/) - Binary hash matching, policy engine, and vulnerability management. *Commercial.*
+- [SBOMReady](https://sbomready.eu) - Free checker for embedded/IoT manufacturers: matches a firmware SBOM (SPDX/CycloneDX from esp-idf-sbom, west spdx, or Yocto) against OSV.dev, CISA KEV, and EPSS, then scores it against CRA Annex I/VII and RED-DA/EN 18031 requirements. *Free.*
 - [Snyk](https://snyk.io/) - Developer-centric SCA with SBOM export and vulnerability detection. *Commercial.*
 
 ### Coordinated Vulnerability Disclosure
