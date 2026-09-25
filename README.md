@@ -218,6 +218,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 - [Cosign (sigstore)](https://github.com/sigstore/cosign) - Signs and attests SBOMs and attaches them to OCI artifacts for supply-chain integrity. *Apache-2.0.*
 - [Dependency-Track (OWASP)](https://github.com/DependencyTrack/dependency-track) - Continuous SBOM-based component analysis platform with policy engine and VEX support. *Apache-2.0.*
 - [Grype](https://github.com/anchore/grype) - CVE scanner that consumes CycloneDX and SPDX SBOMs. *Apache-2.0.*
+- [Sapper](https://github.com/Perruer/sapper) - Builds one dependency graph from the CycloneDX and SPDX SBOMs of all products and OSV advisories, and reports which products each vulnerability reaches, with actively exploited ones (CISA KEV) first and OpenVEX statements applied. Supports the vulnerability-handling requirements of Annex I Part II and triage for Art. 14 reporting of actively exploited vulnerabilities. *Apache-2.0.*
 - [Secvisogram](https://github.com/secvisogram/secvisogram) - CSAF v2.0 advisory editor mapping to prEN 40000-1-3 `[RLS-2-RQ-03-RE]`; maintained with BSI involvement. *MIT.*
 
 *Firmware and binary analysis (IoT / embedded):*
