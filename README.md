@@ -396,6 +396,5 @@ The PDFs mirrored in `docs/eu/` and `presentations/` retain the rights of their 
 This list is curated and maintained by **Jeans Koo** at **The One Testing Technology Co., Ltd** — an ISO/IEC 17025 accredited testing laboratory supporting manufacturers through the EU Cyber Resilience Act lifecycle: scoping, risk assessment, security-by-design review, vulnerability management, and conformity assessment.
 
 - 💼 [LinkedIn — Jeans Koo](https://www.linkedin.com/in/jeans-koo/)
-- ✉️ [jeans.koo@theonelab.co](mailto:jeans.koo@theonelab.co)
 
 *For questions, corrections, or to contribute a resource, open an issue or pull request — see [CONTRIBUTING.md](CONTRIBUTING.md).*
