@@ -216,6 +216,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 *Vulnerability analysis and disclosure:*
 
 - [Cosign (sigstore)](https://github.com/sigstore/cosign) - Signs and attests SBOMs and attaches them to OCI artifacts for supply-chain integrity. *Apache-2.0.*
+- [CRA Watch scan](https://github.com/abinjohnson400-beep/crawatch.dev) - CLI and GitHub Action that fails a build when a dependency in any of 19 lockfile formats, or a CycloneDX/SPDX SBOM, is on the CISA Known Exploited Vulnerabilities catalog. Targets the actively-exploited trigger for the Art. 14 24-hour early warning. *MIT.*
 - [Dependency-Track (OWASP)](https://github.com/DependencyTrack/dependency-track) - Continuous SBOM-based component analysis platform with policy engine and VEX support. *Apache-2.0.*
 - [Grype](https://github.com/anchore/grype) - CVE scanner that consumes CycloneDX and SPDX SBOMs. *Apache-2.0.*
 - [Sapper](https://github.com/Perruer/sapper) - Builds one dependency graph from the CycloneDX and SPDX SBOMs of all products and OSV advisories, and reports which products each vulnerability reaches, with actively exploited ones (CISA KEV) first and OpenVEX statements applied. Supports the vulnerability-handling requirements of Annex I Part II and triage for Art. 14 reporting of actively exploited vulnerabilities. *Apache-2.0.*
