@@ -202,6 +202,14 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 - [Trivy](https://github.com/aquasecurity/trivy) - Container and filesystem SBOM generator combined with a vulnerability scanner in one binary. *Apache-2.0.*
 - [Yocto Project SPDX generation](https://docs.yoctoproject.org/dev/dev-manual/sbom.html) - Native SPDX SBOM output for embedded and IoT builds using the Yocto/OpenEmbedded framework. *Open-source.*
 - [CRANE](https://github.com/cra-norm-engine/crane) - Open-source CRA compliance evidence engine that evaluates SBOMs and related artefacts against machine-readable CRA requirements and produces structured compliance evidence. *AGPL-3.0.*
+
+*Cryptographic Bill of Materials (CBOM) tools (open source):*
+
+A CBOM is a CycloneDX document describing cryptographic assets rather than software components. It does **not** satisfy `[PRE-7-RQ-01]`, which is about inventorying every software component, and none of these tools replace an SBOM generator. They address the separate question of which cryptographic algorithms a product actually uses — relevant to CRA Annex I Part I security-by-design obligations, and to the migration deadlines set by NIST IR 8547 (deprecated after 2030, disallowed after 2035) that will outlive most products now being placed on the EU market.
+
+- [CBOMkit](https://github.com/cbomkit/cbomkit) - Toolset for generating, storing and viewing CycloneDX Cryptography Bills of Materials, including a scanning service and a web viewer. *Apache-2.0.*
+- [PQC Readiness Scan](https://github.com/johnInarti/pqc-readiness-action) - GitHub Action that statically scans a repository for quantum-vulnerable cryptography and emits a CycloneDX 1.6 CBOM plus SARIF for code scanning. Being a static scan it is evidence to start from and explicitly not a proof of absence; it records its own coverage limits inside the document. *Apache-2.0.*
+- [sonar-cryptography](https://github.com/cbomkit/sonar-cryptography) - SonarQube plugin that detects cryptographic assets during static analysis and generates a CBOM from them. *Apache-2.0.*
   
 *Validation and quality scoring:*
 
