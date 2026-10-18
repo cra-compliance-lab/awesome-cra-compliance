@@ -213,6 +213,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
   
 *Validation and quality scoring:*
 
+- [Ambolt CRA checks](https://github.com/ambolt-dev/cra-check) - Command-line tool (npm package `@ambolt/cra`) and GitHub Action that check a CycloneDX or SPDX JSON SBOM against the NTIA minimum elements and the CRA wording, with an optional OSV lookup, and generate security.txt and a disclosure policy. *MIT.*
 - [bomber](https://github.com/devops-kung-fu/bomber) - SBOM vulnerability scanner with pluggable data-provider backends. *Apache-2.0.*
 - [cra-sbom-evidence](https://github.com/plusultra-tools/cra-sbom-evidence) - CRA Annex I Part II (1) preflight: scores a CycloneDX/SPDX SBOM against BSI TR-03183-2 mandatory fields and emits an Article 14 evidence bundle. *MIT.*
 - [CycloneDX CLI](https://github.com/CycloneDX/cyclonedx-cli) - Schema validation, format conversion, and SBOM merge/diff operations. *Apache-2.0.*
