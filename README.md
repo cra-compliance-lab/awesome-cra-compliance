@@ -224,6 +224,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 *Vulnerability analysis and disclosure:*
 
 - [Cosign (sigstore)](https://github.com/sigstore/cosign) - Signs and attests SBOMs and attaches them to OCI artifacts for supply-chain integrity. *Apache-2.0.*
+- [CRALedger Duty Records](https://apps.shopify.com/craledger-duty-records) - Shopify app that tracks CRA product duties, Article 14 incident deadlines, encrypted ENISA SRP draft packs, vulnerability forwarding, and audit records. Tracks product roles, checklists and open record gaps, and exports record packs and chronological audit evidence. *Commercial.*
 - [Dependency-Track (OWASP)](https://github.com/DependencyTrack/dependency-track) - Continuous SBOM-based component analysis platform with policy engine and VEX support. *Apache-2.0.*
 - [Grype](https://github.com/anchore/grype) - CVE scanner that consumes CycloneDX and SPDX SBOMs. *Apache-2.0.*
 - [Sapper](https://github.com/Perruer/sapper) - Builds one dependency graph from the CycloneDX and SPDX SBOMs of all products and OSV advisories, and reports which products each vulnerability reaches, with actively exploited ones (CISA KEV) first and OpenVEX statements applied. Supports the vulnerability-handling requirements of Annex I Part II and triage for Art. 14 reporting of actively exploited vulnerabilities. *Apache-2.0.*
