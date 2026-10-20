@@ -404,3 +404,5 @@ The PDFs mirrored in `docs/eu/` and `presentations/` retain the rights of their 
 - 💼 [LinkedIn — Jeans Koo](https://www.linkedin.com/in/jeans-koo/)
 
 *For questions, corrections, or to contribute a resource, open an issue or pull request — see [CONTRIBUTING.md](CONTRIBUTING.md).*
+
+- [CausalLayer MCP](https://github.com/smq9sn5jck-coder/causallayer-mcp) - Deterministic liability attribution for AI systems, designed for EU regulatory compliance including AI Act and CRA overlap areas.
