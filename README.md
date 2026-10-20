@@ -244,6 +244,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 - [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
 - [Mend](https://www.mend.io/) - Binary hash matching, policy engine, and vulnerability management. *Commercial.*
 - [Snyk](https://snyk.io/) - Developer-centric SCA with SBOM export and vulnerability detection. *Commercial.*
+- [Whenproof](https://whenproof.tielemans.dev/?ref=awesome-cra-compliance) - GitHub App that stores a dated CycloneDX 1.6 and SPDX 2.3 SBOM for every push, rescans stored SBOMs daily against OSV.dev advisories, and records who confirmed a vulnerability as actively exploited and when. Relevant to the vulnerability-handling requirements in Annex I Part II and the Art. 14 24-hour clock, for which it drafts the ENISA early warning. *Commercial; early access (waitlist), not yet generally available.*
 
 ### Coordinated Vulnerability Disclosure
 
