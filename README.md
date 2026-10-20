@@ -224,6 +224,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 *Vulnerability analysis and disclosure:*
 
 - [Cosign (sigstore)](https://github.com/sigstore/cosign) - Signs and attests SBOMs and attaches them to OCI artifacts for supply-chain integrity. *Apache-2.0.*
+- [crakit-action](https://github.com/ldc2956/crakit-action) - GitHub Action that builds a CycloneDX SBOM from a repository's lockfiles, then checks every component against OSV and the CISA Known Exploited Vulnerabilities catalogue. It fails the build on a KEV match, the event that starts the Article 14 reporting clock. *MIT.*
 - [Dependency-Track (OWASP)](https://github.com/DependencyTrack/dependency-track) - Continuous SBOM-based component analysis platform with policy engine and VEX support. *Apache-2.0.*
 - [Grype](https://github.com/anchore/grype) - CVE scanner that consumes CycloneDX and SPDX SBOMs. *Apache-2.0.*
 - [Sapper](https://github.com/Perruer/sapper) - Builds one dependency graph from the CycloneDX and SPDX SBOMs of all products and OSV advisories, and reports which products each vulnerability reaches, with actively exploited ones (CISA KEV) first and OpenVEX statements applied. Supports the vulnerability-handling requirements of Annex I Part II and triage for Art. 14 reporting of actively exploited vulnerabilities. *Apache-2.0.*
