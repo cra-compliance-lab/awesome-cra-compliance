@@ -242,6 +242,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 - [CRACI](https://craci.com/build-time-sboms) - Managed GitHub Actions runners that record the dependencies each build pulls in and produce a CycloneDX or SPDX SBOM per job, then track vulnerabilities in what shipped. Relevant to the SBOM and vulnerability-handling requirements in Annex I. *Commercial.*
 - [FOSSA](https://fossa.com/) - Software composition analysis combining licence compliance with SBOM generation. *Commercial.*
 - [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
+- [LegacyMind](https://www.legacymind.de/en/formats) - Produces a CycloneDX 1.6 or SPDX SBOM with component versions and known vulnerabilities, including actively exploited ones, from shipped firmware: embedded Linux images and Keil, IAR or GNU Arm ELF/AXF builds for microcontrollers. Imports supplier SBOMs in CycloneDX or SPDX and reports findings against Annex I for the manufacturer's technical documentation. *Commercial; free check for one firmware file.*
 - [Mend](https://www.mend.io/) - Binary hash matching, policy engine, and vulnerability management. *Commercial.*
 - [Snyk](https://snyk.io/) - Developer-centric SCA with SBOM export and vulnerability detection. *Commercial.*
 
