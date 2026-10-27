@@ -239,6 +239,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 *Commercial SCA / SBOM platforms:*
 
 - [Black Duck (Synopsys)](https://www.synopsys.com/software-integrity.html) - Binary-code fingerprinting and snippet detection, common in automotive and medical compliance programmes. *Commercial.*
+- [ceproof](https://ceproof.dev) - Offline command-line tool that scans a Node.js or Python repository and derives a gap checklist against the Annex VII technical documentation and Annex V declaration of conformity items, with CycloneDX and SPDX SBOM output relevant to Annex I Part II. The scan and SBOMs are free, the generated Annex VII pack and declaration draft need a licence key, and the source is available under Elastic-2.0 (not an OSI-approved licence). *Commercial; free scan.*
 - [CRACI](https://craci.com/build-time-sboms) - Managed GitHub Actions runners that record the dependencies each build pulls in and produce a CycloneDX or SPDX SBOM per job, then track vulnerabilities in what shipped. Relevant to the SBOM and vulnerability-handling requirements in Annex I. *Commercial.*
 - [FOSSA](https://fossa.com/) - Software composition analysis combining licence compliance with SBOM generation. *Commercial.*
 - [Insignary Clarity](https://www.insignary.com/) - Binary-level fingerprinting without source-code access. *Commercial.*
