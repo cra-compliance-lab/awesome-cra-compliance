@@ -373,6 +373,7 @@ These books are **copyrighted**. Links go to publishers or neutral reference pag
 - [BSA | The Software Alliance](https://www.bsa.org/) - Software-industry CRA analysis.
 - [Open Source Initiative (OSI) — CRA pages](https://opensource.org/) - OSI commentary on Art. 2 (open-source scope) and Art. 24 (open-source stewards).
 - [Eclipse Foundation CRA pages](https://cra.eclipse.org/) - Eclipse's CRA guidance for open-source communities.
+- [EU Cyber Resilience Act (Regulation (EU) 2024/2847) — status, deadlines & IEC 62443 mapping (OT Governance Radar)](https://otgovernanceradar.com/regulations/cyber-resilience-act/) - Independent tracker page for the CRA's application dates and reporting obligations, with each date linked to EUR-Lex or the Commission and a last-checked date. Includes an indicative mapping of CRA requirements to IEC 62443 controls. *Free.*
 
 ---
 
