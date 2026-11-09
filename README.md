@@ -220,6 +220,7 @@ A CBOM is a CycloneDX document describing cryptographic assets rather than softw
 - [sbomqs](https://github.com/interlynk-io/sbomqs) - Quality and compliance scorer with built-in profiles for BSI TR-03183-2, NTIA Minimum Elements, FSCT v3, and OpenChain Telco. *Apache-2.0.*
 - [sbom-tools](https://github.com/sbom-tool/sbom-tools) - Semantic SBOM/CBOM diff and scoring tool with CRA, NTIA, and NIST SSDF profiles plus VEX state tracking. *MIT.*
 - [SPDX Tools](https://github.com/spdx/tools) - Reference SPDX validator, converter, and model toolkit. *Apache-2.0.*
+- [Free CRA check: 8 security signals in a GitHub repo](https://tokenizen.nl/cra-check) - Reads a public GitHub repository and shows which of eight selected security signals are visible from outside, among them a security policy with a contact, an SBOM and release provenance. It needs no account, its code is MIT licensed and it is not a conformity assessment. *Free, MIT.*
 
 *Vulnerability analysis and disclosure:*
 
