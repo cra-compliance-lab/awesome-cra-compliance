@@ -373,6 +373,7 @@ These books are **copyrighted**. Links go to publishers or neutral reference pag
 - [BSA | The Software Alliance](https://www.bsa.org/) - Software-industry CRA analysis.
 - [Open Source Initiative (OSI) — CRA pages](https://opensource.org/) - OSI commentary on Art. 2 (open-source scope) and Art. 24 (open-source stewards).
 - [Eclipse Foundation CRA pages](https://cra.eclipse.org/) - Eclipse's CRA guidance for open-source communities.
+- [Cyber Resilience Act: a guide to the regulation (Cybersecurity Database)](https://www.cybersecuritydatabase.org/en/guides/cra/) - Free guide covering key dates, product categories, essential requirements, reporting obligations and follow-up acts, with links to the official texts. *Free.*
 
 ---
 
