@@ -89,6 +89,7 @@ The M/606 mandate defines **40+ harmonised standards** — 4 horizontal (applica
 
 - [STAN4CRA Portal](https://www.stan4cra.eu) — The official tracking portal where CEN, CENELEC, and ETSI publish development progress of every CRA harmonised standard. *Bookmark this.*
 - [CYBERSTAND Project](https://cyberstand.eu) — EU-funded initiative onboarding 200+ experts to contribute to CRA standards; tracks expert participation and working-group outputs.
+- [CRA harmonised standards — current status, citation and assessment checks](https://cenitia.com/library/cra-harmonised-standards-tracker) - Dated status page for the M/606 standardisation request that records whether any harmonised standard has been cited in the Official Journal for the CRA and what a citation changes for the Article 32 conformity assessment routes. Each observation states the date it was checked and links to the primary source. *Free; published by a vendor.*
 
 ### Horizontal Standards (CEN/CLC JTC 13)
 
