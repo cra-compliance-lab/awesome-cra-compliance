@@ -194,6 +194,7 @@ CRA Annex I Part II (1) obliges manufacturers to identify and document the compo
 *Generation tools (open source):*
 
 - [cdxgen](https://github.com/CycloneDX/cdxgen) - Fast multi-language CycloneDX SBOM generator with monorepo and reachability support. *Apache-2.0.*
+- [CRAOps (cra-audit)](https://github.com/devansh2396/cra-audit) - Zero-dependency Node.js CLI and GitHub Action that generates CycloneDX 1.6 SBOMs, CSAF 2.0 VEX advisories, Annex VII technical file starters, and Article 14 ENISA SRP templates with OSV and CISA KEV checks. *MIT.*
 - [CycloneDX build plugins](https://github.com/CycloneDX) - Native build-time SBOM generators for Maven, Gradle, npm, Python, .NET, Go, Rust, and PHP. *Open-source; highest-fidelity Build SBOMs per BSI TR-03183-2.*
 - [Microsoft sbom-tool](https://github.com/microsoft/sbom-tool) - Enterprise SPDX 2.2 / 3.0 generator using Microsoft Component Detection libraries. *MIT.*
 - [OSS Review Toolkit (ORT)](https://github.com/oss-review-toolkit/ort) - End-to-end analyse-scan-report pipeline for SBOM and licence compliance, used across automotive and telecom. *Apache-2.0.*
